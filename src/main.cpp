@@ -2,7 +2,7 @@
 
 void CTimer__Update(const decltype(CTimerHook)& hook) {
     static bool init{};
-    if (!init && samp::RefNetGame() && rakhook::initialize()) {
+    if (!init && rakhook::initialize()) {
 
         StringCompressor::AddReference();
 
